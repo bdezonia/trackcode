@@ -36,7 +36,7 @@ public class Main {
 
 	public static void loadTrakData() {
 	
-		String filename = "/home/bdezonia/images/nifti/DTI_Lab3_tracts.trk";
+		String filename = "/home/bdezonia/testdata/trak/DTI_Lab3_tracts.trk";
 		
 		System.out.println("About to find stats");
 
@@ -1019,13 +1019,13 @@ public class Main {
 	
 	public static void main(String[] args) {
 
-		//long lStart = System.currentTimeMillis();
+		long lStart = System.currentTimeMillis();
 
-		//loadTrakData();
+		loadTrakData();
 		
-		//long lEnd = System.currentTimeMillis();
+		long lEnd = System.currentTimeMillis();
 		
-		//System.out.println("Total load time at least " + ((lEnd - lStart)/1000) + " seconds");
+		System.out.println("Total load time at least " + ((lEnd - lStart)/1000) + " seconds");
 	
 
 		String fname = "/home/bdezonia/waisman/set2/tractography_01M.tck";  // reads in 4.8 secs, loads in 9 secs, calcs/stores bounds in 3.3 secs, searches in 21 secs, finds 306 tracts
